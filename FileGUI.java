@@ -83,5 +83,93 @@ public class FileGUI extends FileProcessing implements ActionListener{
 
 	public void actionPerformed(ActionEvent e) {
 		
-  }
-}
+		
+		JFileChooser choosingFile = new JFileChooser();
+		JFileChooser choosingFile1 = new JFileChooser();
+		int choose;
+		int choose1;
+		String fname;
+		String fname1;
+		float relation;
+		
+		
+		if(e.getSource() == button1)
+		{
+           
+             choose = choosingFile.showOpenDialog(null);
+
+       
+            if(choose == JFileChooser.APPROVE_OPTION)
+            {
+                readingFile = new File(choosingFile.getSelectedFile().getAbsolutePath());
+
+                Filename = readingFile.getAbsolutePath();
+            }
+            
+		}
+		
+		else if (e.getSource() == button2)
+		{
+
+            choose1 = choosingFile1.showOpenDialog(null);
+
+            if(choose1 == JFileChooser.APPROVE_OPTION)
+            {
+                readingFile1 = new File(choosingFile1.getSelectedFile().getAbsolutePath());
+
+                Filename = readingFile1.getAbsolutePath();
+            }
+ 
+		}
+		
+		
+		else if (e.getSource() == button3)
+		{
+			
+			stopList.add(Stop.getText());
+		}
+		
+		else if (e.getSource() == button4)
+		{
+			
+			i = Integer.parseInt(Comparison.getText());
+		}
+		
+		else if (e.getSource() == button5)
+		{
+			
+			
+			fname = readingFile.getAbsolutePath();;
+			fname1 = readingFile1.getAbsolutePath();
+			
+			
+			FileProcessing file1 = new FileProcessing(fname);
+			FileProcessing file2 = new FileProcessing(fname1);
+			
+			file1.readFile(fname1,i);
+			file2.readFile(fname, i);
+			
+		
+			relation = tally*100/Temporary.size();
+			System.out.println(relation);
+            
+		
+			if(relation == 100.0)
+           {
+               JOptionPane.showMessageDialog(null,"The two files being compared are identical");
+           }
+           else if(relation > 70.0)
+           {
+               JOptionPane.showMessageDialog(null,"The two files being compared are very similar and most likely is about the same topic");
+           }
+           
+           else if(relation < 25.0)
+           {
+               JOptionPane.showMessageDialog(null,"The two files don't have much in common and not likely to be about the same topic");
+           }
+           
+           else if(relation == 0.0)
+           {
+               JOptionPane.showMessageDialog(null,"The two files share nothing in common");
+           }
+           
