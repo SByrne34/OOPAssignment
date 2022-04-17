@@ -27,11 +27,12 @@ Core Functionality included
 - Analyses the words in each file and decides the top words in each
 - Stop words included in a file will be exlcuded from the analysis
 - Creates a percentage of how related the files are to each other based on the words in each file
+- User sets limit on top words shown and uses a button to compare both files in a GUI
 
 Optional Functionality included
 - GUI quality is improved with FlowLayout and setBackground used
 - Files can be chosen within the GUI
-- New words can be added to the stop words list
+- New words can be added to the stop words list in GUI
 
 If I had more time, I would include:
 - The results being saved to a file
