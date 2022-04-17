@@ -7,15 +7,15 @@
 
 Classes
 
-Control
-FileProcessing
-FileGUI
+- Control
+- FileProcessing
+- FileGUI
 
 Control Class
 - This contains the main method, calls the FileGUI class and allows the project to execute.
 
 FileProcessing Class
-- This contains the setter for the FIlename attribute  and the readFile method
+- This contains the setter for the FIlename attribute  and the readFile method.
 The readFile method uses a try/catch, it reads the stop words text file and the files later selected by the user in the GUI, this is achieved with the use of a scanner which the words read being inserted into an arrayList first, the words from the files that will be selected in the GUI are then moved from an arrayList into a linked Hashmap. The top words are then printed with the limit being selected in the GUI, finally a Hashmap called Temporary is used to count the duplicate keys and values present in the files and the values in the linked Hashmap fileMap are copied into this hashmap which will be used in the FileGUI class.
 
 FileGUI Class
