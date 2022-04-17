@@ -181,6 +181,11 @@ public class FileGUI extends FileProcessing implements ActionListener
            		{
                			JOptionPane.showMessageDialog(null,"The two files share nothing in common");
            		}
+			
+			else
+           		{
+               			JOptionPane.showMessageDialog(null,"The two files share similarities but it is difficult to say they are about the same topic");
+          		}
 		}
 	}
 }
