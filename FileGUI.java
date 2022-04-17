@@ -92,8 +92,8 @@ public class FileGUI extends FileProcessing implements ActionListener
 		button5.addActionListener(this);
 	}
 
-	public void actionPerformed(ActionEvent e) {
-		
+	public void actionPerformed(ActionEvent e)
+	{
 		// Initialize attributes
 		JFileChooser choosingFile = new JFileChooser();
 		JFileChooser choosingFile1 = new JFileChooser();
@@ -102,7 +102,6 @@ public class FileGUI extends FileProcessing implements ActionListener
 		String fname;
 		String fname1;
 		float relation;
-		
 		
 		if(e.getSource() == button1)
 		{
