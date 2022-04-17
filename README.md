@@ -5,6 +5,8 @@
 
 -------------------------------
 
+The project idea I chose for this assignment was Number 1: Topic Modeller
+
 Classes
 
 - Control
