@@ -1,7 +1,7 @@
 # OOPAssignment Stephen Byrne C20470166
 
-Link to GitHub: https://github.com/SByrne34/OOPAssignment
-Link to Youtube: 
+- Link to GitHub: https://github.com/SByrne34/OOPAssignment
+- Link to Youtube: 
 
 -------------------------------
 
